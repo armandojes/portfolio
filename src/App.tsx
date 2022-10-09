@@ -1,15 +1,14 @@
 import { FC } from 'react';
 import 'normalize.css';
-import Container from './components/container';
-import Header from './components/header';
+import Home from 'pages/home';
+import { StyledEngineProvider } from '@mui/material';
 import GlobalStyles from './styledGlobal';
 
 const App: FC = () => (
-  <>
+  <StyledEngineProvider injectFirst>
     <GlobalStyles />
-    <Header />
-    <Container>Hello react</Container>
-  </>
+    <Home />
+  </StyledEngineProvider>
 );
 
 export default App;
