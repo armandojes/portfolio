@@ -6,6 +6,9 @@ const GlobalStyles = createGlobalStyle`
   :root {
     ${transformObjectIntoCssVariables(colors)}
   }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
 `;
 
 export default GlobalStyles;

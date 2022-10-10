@@ -1,7 +1,7 @@
 import Header from 'components/header';
-import { Box } from '@mui/material';
 import { FC } from 'react';
 import styled from 'styled-components';
+import Certificates from 'pages/home/components/certificates';
 
 const FullWrapper = styled.section`
   background-color: var(--greey);
@@ -11,7 +11,7 @@ const FullWrapper = styled.section`
 const Home: FC = () => (
   <FullWrapper>
     <Header />
-    <Box>hellp</Box>
+    <Certificates />
   </FullWrapper>
 );
 
