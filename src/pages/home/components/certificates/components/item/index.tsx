@@ -33,10 +33,11 @@ const Title = styled(Text)`
 export interface Props {
   icon: string,
   title: string,
+  onClick?: () => void,
 }
 
-const CertificateItem: FC<Props> = ({ icon, title }) => (
-  <Wrapper>
+const CertificateItem: FC<Props> = ({ icon, title, onClick = () => {} }) => (
+  <Wrapper onClick={onClick}>
     <Icon src={icon} />
     <Title>{title}</Title>
   </Wrapper>

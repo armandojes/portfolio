@@ -1,45 +1,44 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { Container, Box } from '@mui/material';
 import Text from 'layout/text';
-import styled from 'styled-components';
 import CertificateItem from './components/item';
 import certificatesList from './data';
+import ModalCertificate from './components/modal';
+import { FlexContainer, FlexItemWrapper } from './styled';
 
-const FlexContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap;
-`;
+const Certificates: FC = () => {
+  const [certificate, setCertificate] = useState<undefined | string>();
 
-const FlexItemWrapper = styled.div`
-  width: 33.3%;
-  padding: .8em;
-  box-sizing: border-box;
-  @media screen and (max-width: 600px) {
-    width: 50%;
-    padding: .5em;
-  }
-`;
+  const handleOpenertificate = (certificateUrl: string) => setCertificate(certificateUrl);
 
-const Certificates: FC = () => (
-  <Container>
-    <Box padding="1em 0em">
+  const handleCloseCertificate = () => setCertificate(undefined);
 
-      <Box padding="1em 0em">
-        <Text align="center" variant="titleSection">Certificates</Text>
-      </Box>
+  return (
+    <>
+      <ModalCertificate picture={certificate} onClose={handleCloseCertificate} />
+      <Container>
+        <Box padding="1em 0em">
 
-      <FlexContainer>
-        {certificatesList.map((item) => (
-          <FlexItemWrapper key={item.label}>
-            <CertificateItem icon={item.picture} title={item.label} />
-          </FlexItemWrapper>
-        ))}
-      </FlexContainer>
+          <Box padding="1em 0em">
+            <Text align="center" variant="titleSection">Certificates</Text>
+          </Box>
 
-    </Box>
-  </Container>
-);
+          <FlexContainer>
+            {certificatesList.map((item) => (
+              <FlexItemWrapper key={item.label}>
+                <CertificateItem
+                  icon={item.icon}
+                  title={item.label}
+                  onClick={() => handleOpenertificate(item.certificate)}
+                />
+              </FlexItemWrapper>
+            ))}
+          </FlexContainer>
+
+        </Box>
+      </Container>
+    </>
+  );
+};
 
 export default Certificates;

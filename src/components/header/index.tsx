@@ -1,9 +1,9 @@
-import { Typography, Container, ButtonBase } from '@mui/material';
+import { Container, ButtonBase } from '@mui/material';
 import { HashLink } from 'react-router-hash-link';
 import { FC } from 'react';
 import styled from 'styled-components';
-import menuItems from './menuItems';
 import Text from 'layout/text';
+import menuItems from './menuItems';
 
 const HeaderInner = styled.div`
  height: 4em;
