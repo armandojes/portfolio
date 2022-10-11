@@ -20,6 +20,7 @@ const Text = styled.div<Props>`
   color: ${(props) => (props.color || colors.white)};
   font-size: ${(props) => calculateTextSize(props.variant)};
   font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
+  line-height: 1.5em;
 `;
 
 export default Text;

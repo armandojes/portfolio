@@ -8,6 +8,16 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    @media screen and (max-width:1200px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width:900px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width:600px) {
+      font-size: 12px;
+    }
   }
 `;
 

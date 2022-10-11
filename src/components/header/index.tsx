@@ -3,6 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import { FC } from 'react';
 import styled from 'styled-components';
 import menuItems from './menuItems';
+import Text from 'layout/text';
 
 const HeaderInner = styled.div`
  height: 4em;
@@ -37,9 +38,9 @@ const Header: FC = () => (
       <Container>
         <HeaderInner>
           {menuItems.map((item) => (
-            <Link smooth to={item.path}>
+            <Link smooth to={item.path} key={item.label}>
               <Button>
-                <Typography>{item.label}</Typography>
+                <Text>{item.label}</Text>
               </Button>
             </Link>
           ))}
