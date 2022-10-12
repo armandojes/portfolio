@@ -7,7 +7,7 @@ export interface SectionProps {
 export const Section = styled.div<SectionProps>`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 3em 0em;
   @media screen and (max-width:500px) {
     flex-wrap: ${(props) => (props.reverseWrapMobile ? 'wrap-reverse' : 'wrap')};
@@ -17,7 +17,7 @@ export const Section = styled.div<SectionProps>`
   }
 `;
 
-export const Picture = styled.img`
+export const PictureWrapper = styled.div`
   width: 40%;
   @media screen and (max-width:500px) {
     width: 70%;
@@ -25,8 +25,8 @@ export const Picture = styled.img`
   }
 `;
 
-export const PictureNodeBlendMode = styled(Picture)`
-  mix-blend-mode: lighten;
+export const Picture = styled.img`
+  width: 100%;
 `;
 
 export const TextContainer = styled.div`

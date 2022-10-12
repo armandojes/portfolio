@@ -19,6 +19,7 @@ const Wrapper = styled.header`
   box-sizing: border-box;
   background-color: var(--greey);
   box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 10%);
+  z-index: 2;
 `;
 
 const Link = styled(HashLink)`
