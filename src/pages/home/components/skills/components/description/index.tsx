@@ -5,14 +5,14 @@ import Text from 'layout/text';
 import { Box } from '@mui/material';
 import Lottie from 'react-lottie';
 import { PictureWrapper, Picture, Section, TextContainer } from './styled';
-import testSrc from './test.json';
-import test2Src from './test2.json';
+import backendSrc from './backend.json';
+import frontendSrc from './frontend.json';
 
 const Description: FC = () => (
   <div>
     <Section reverseWrapMobile>
       <PictureWrapper style={{ transform: 'scale(1.3)' }}>
-        <Lottie options={{ animationData: testSrc }} />
+        <Lottie options={{ animationData: backendSrc }} />
       </PictureWrapper>
       <TextContainer>
         <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">Backend developer</Text>
@@ -34,7 +34,7 @@ const Description: FC = () => (
         </Text>
       </TextContainer>
       <PictureWrapper as="div">
-        <Lottie options={{ animationData: test2Src }} />
+        <Lottie options={{ animationData: frontendSrc }} />
       </PictureWrapper>
     </Section>
 
