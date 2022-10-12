@@ -17,7 +17,7 @@ const Divider = styled.div`
 `;
 
 const Line = styled.div`
-  border-bottom: 2px solid var(--green);
+  border-bottom: 1px solid var(--green);
   flex-grow: 1;
   margin-left: 1em;
 `;

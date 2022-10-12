@@ -3,6 +3,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 import Certificates from 'pages/home/components/certificates';
 import Skills from './components/skills';
+import Contact from './components/contact';
 
 const FullWrapper = styled.section`
   background-color: var(--greey);
@@ -14,6 +15,7 @@ const Home: FC = () => (
     <Header />
     <Skills />
     <Certificates />
+    <Contact />
   </FullWrapper>
 );
 
