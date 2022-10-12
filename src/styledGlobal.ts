@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     @media screen and (max-width:1200px) {
       font-size: 15px;
     }

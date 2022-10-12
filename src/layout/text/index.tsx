@@ -1,26 +1,23 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors } from '../../constants';
 
 export type TextVariants = 'titleSection' | 'other';
 
-export interface Props {
-  variant?: TextVariants,
+export interface TextProps {
   color?: string,
   align?: 'center' | 'left' | 'rigth',
   bold?: boolean,
+  size?: string,
+  marginBottom?: string,
 }
 
-const calculateTextSize = (variant?: TextVariants) => {
-  if (variant === 'titleSection') return '1.8em';
-  return '1em';
-};
-
-const Text = styled.div<Props>`
+const Text = styled.div<TextProps>`
   text-align: ${(props) => (props.align || 'left')};
   color: ${(props) => (props.color || colors.white)};
-  font-size: ${(props) => calculateTextSize(props.variant)};
+  font-size: ${(props) => (props.size || '1em')};
   font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
   line-height: 1.5em;
+  ${(props) => props.marginBottom && css` margin-bottom: ${props.marginBottom} `};
 `;
 
 export default Text;
