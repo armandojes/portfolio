@@ -12,6 +12,10 @@ export const ItemWrapper = styled.div`
   width: 33.3%;
   padding: 1em;
   box-sizing: border-box;
+  @media screen and (max-width:700px) {
+    width: 50%;
+    padding: .5em;
+  }
 `;
 
 export const Item = styled.div`
@@ -21,6 +25,9 @@ export const Item = styled.div`
   justify-content: center;
   height: 100%;
   box-sizing: border-box;
+  @media screen and (max-width:900px) {
+    padding: 1em;
+  }
 `;
 
 export const Title = styled(Text)`
