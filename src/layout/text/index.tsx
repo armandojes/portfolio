@@ -12,7 +12,7 @@ export interface TextProps {
 }
 
 const Text = styled.div<TextProps>`
-  text-align: ${(props) => (props.align || 'left')};
+  text-align: ${(props) => (props.align || 'unset')};
   color: ${(props) => (props.color || colors.white)};
   font-size: ${(props) => (props.size || '1em')};
   font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};

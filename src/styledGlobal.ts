@@ -19,6 +19,13 @@ const GlobalStyles = createGlobalStyle`
       font-size: 12px;
     }
   }
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: unset;
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyles;
