@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import Container from 'layout/container';
 import { FC } from 'react';
 import SectionTitle from '../sectionTitle';
 import Description from './components/description';

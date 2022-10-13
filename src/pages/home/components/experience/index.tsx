@@ -1,4 +1,5 @@
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
+import Container from 'layout/container';
 import { FC } from 'react';
 import SectionTitle from '../sectionTitle';
 import ExperienceCard from './components/experienceCard';

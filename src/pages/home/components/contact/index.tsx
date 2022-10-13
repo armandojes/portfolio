@@ -1,4 +1,4 @@
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 import { FC } from 'react';
 import Lottie from 'react-lottie';
 import Text from 'layout/text';
@@ -8,6 +8,7 @@ import twitterSrc from 'assets/icons/twitter.png';
 import whatsappSrc from 'assets/icons/whatsapp.png';
 import emailSrc from 'assets/icons/email.png';
 
+import Container from 'layout/container';
 import SectionTitle from '../sectionTitle';
 import { DataWrapper, FlexWrapper, ImageWrapper, Row, RowPicture } from './styled';
 import animationSrc from './animation.json';

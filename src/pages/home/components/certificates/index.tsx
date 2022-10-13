@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
-import { Container, Box } from '@mui/material';
+import { Box } from '@mui/material';
+import Container from 'layout/container';
 import CertificateItem from './components/item';
 import certificatesList from './data';
 import ModalCertificate from './components/modal';

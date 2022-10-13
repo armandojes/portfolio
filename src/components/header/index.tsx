@@ -1,4 +1,5 @@
-import { Container, ButtonBase } from '@mui/material';
+import { ButtonBase } from '@mui/material';
+import Container from 'layout/container';
 import { HashLink } from 'react-router-hash-link';
 import { FC } from 'react';
 import styled from 'styled-components';
