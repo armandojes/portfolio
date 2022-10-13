@@ -24,6 +24,9 @@ const Icon = styled.img`
   @media screen and (max-width:800px) {
     width: 3em; 
   }
+  @media screen and (max-width:600px) {
+    width: 2.5em; 
+  }
 `;
 
 const Title = styled(Text)`

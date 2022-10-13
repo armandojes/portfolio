@@ -16,6 +16,9 @@ export const ItemWrapper = styled.div`
     width: 50%;
     padding: .5em;
   }
+  @media screen and (max-width:600px) {
+    padding: .4em;
+  }
 `;
 
 export const Item = styled.div`
@@ -27,6 +30,9 @@ export const Item = styled.div`
   box-sizing: border-box;
   @media screen and (max-width:900px) {
     padding: 1em;
+  }
+  @media screen and (max-width:600px) {
+    padding: .6em;
   }
 `;
 

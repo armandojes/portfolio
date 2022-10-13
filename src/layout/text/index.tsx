@@ -9,6 +9,7 @@ export interface TextProps {
   bold?: boolean,
   size?: string,
   marginBottom?: string,
+  lineHeight?: string,
 }
 
 const Text = styled.div<TextProps>`
@@ -16,7 +17,7 @@ const Text = styled.div<TextProps>`
   color: ${(props) => (props.color || colors.white)};
   font-size: ${(props) => (props.size || '1em')};
   font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
-  line-height: 1.5em;
+  line-height: ${(props) => (props.lineHeight || '1.5em')};
   ${(props) => props.marginBottom && css` margin-bottom: ${props.marginBottom} `};
 `;
 

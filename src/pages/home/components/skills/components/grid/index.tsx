@@ -45,27 +45,27 @@ const Grid: FC = () => (
           <div>
             <Row>
               <RowIcon src={webpackSrc} />
-              <Text>Webpack</Text>
+              <Text lineHeight="1.2em">Webpack</Text>
             </Row>
             <Row>
               <RowIcon src={babelSrc} />
-              <Text>Babel</Text>
+              <Text lineHeight="1.2em">Babel</Text>
             </Row>
             <Row>
               <RowIcon src={rollupSrc} />
-              <Text>Rollup</Text>
+              <Text lineHeight="1.2em">Rollup</Text>
             </Row>
             <Row>
               <RowIcon src={browserifySrc} />
-              <Text>Browserify</Text>
+              <Text lineHeight="1.2em">Browserify</Text>
             </Row>
             <Row>
               <RowIcon src={jestSrc} />
-              <Text>Jest</Text>
+              <Text lineHeight="1.2em">Jest</Text>
             </Row>
             <Row>
               <RowIcon src={eslintSrc} />
-              <Text>ESLint</Text>
+              <Text lineHeight="1.2em">ESLint</Text>
             </Row>
           </div>
         </div>
@@ -78,27 +78,27 @@ const Grid: FC = () => (
           <div>
             <Row>
               <RowIcon src={javascriptSrc} />
-              <Text>Javascript</Text>
+              <Text lineHeight="1.2em">Javascript</Text>
             </Row>
             <Row>
               <RowIcon src={typescriptSrc} />
-              <Text>Typescript</Text>
+              <Text lineHeight="1.2em">Typescript</Text>
             </Row>
             <Row>
               <RowIcon src={phpSrc} />
-              <Text>PHP</Text>
+              <Text lineHeight="1.2em">PHP</Text>
             </Row>
             <Row>
               <RowIcon src={htmlSrc} />
-              <Text>HTML</Text>
+              <Text lineHeight="1.2em">HTML</Text>
             </Row>
             <Row>
               <RowIcon src={cssSrc} />
-              <Text>CSS</Text>
+              <Text lineHeight="1.2em">CSS</Text>
             </Row>
             <Row>
               <RowIcon src={sqlSrc} />
-              <Text>SQL</Text>
+              <Text lineHeight="1.2em">SQL</Text>
             </Row>
           </div>
         </div>
@@ -111,27 +111,27 @@ const Grid: FC = () => (
           <div>
             <Row>
               <RowIcon src={reactSrc} />
-              <Text>React</Text>
+              <Text lineHeight="1.2em">React</Text>
             </Row>
             <Row>
               <RowIcon src={reduxSrc} />
-              <Text>Redux</Text>
+              <Text lineHeight="1.2em">Redux</Text>
             </Row>
             <Row>
               <RowIcon src={vueSrc} />
-              <Text>Vue</Text>
+              <Text lineHeight="1.2em">Vue</Text>
             </Row>
             <Row>
               <RowIcon src={pugSrc} />
-              <Text>Pug</Text>
+              <Text lineHeight="1.2em">Pug</Text>
             </Row>
             <Row>
               <RowIcon src={nextjsSrc} />
-              <Text>NextJs</Text>
+              <Text lineHeight="1.2em">NextJs</Text>
             </Row>
             <Row>
               <RowIcon src={responsiveSrc} />
-              <Text>Responsive Design</Text>
+              <Text lineHeight="1.2em">Responsive Design</Text>
             </Row>
           </div>
         </div>
@@ -144,27 +144,27 @@ const Grid: FC = () => (
           <div>
             <Row>
               <RowIcon src={nodeSrc} />
-              <Text>NodeJs</Text>
+              <Text lineHeight="1.2em">NodeJs</Text>
             </Row>
             <Row>
               <RowIcon src={apiSrc} />
-              <Text>API Rest</Text>
+              <Text lineHeight="1.2em">API Rest</Text>
             </Row>
             <Row>
               <RowIcon src={graphqlSrc} />
-              <Text>GraphQL</Text>
+              <Text lineHeight="1.2em">GraphQL</Text>
             </Row>
             <Row>
               <RowIcon src={jwtSrc} />
-              <Text>Json Web Token</Text>
+              <Text lineHeight="1.2em">Json Web Token</Text>
             </Row>
             <Row>
               <RowIcon src={firebaseSrc} />
-              <Text>Firebase</Text>
+              <Text lineHeight="1.2em">Firebase</Text>
             </Row>
             <Row>
               <RowIcon src={wordpressSrc} />
-              <Text>Wordpress</Text>
+              <Text lineHeight="1.2em">Wordpress</Text>
             </Row>
           </div>
         </div>
@@ -177,23 +177,23 @@ const Grid: FC = () => (
           <div>
             <Row>
               <RowIcon src={gitSrc} />
-              <Text>Git and Github</Text>
+              <Text lineHeight="1.2em">Git and Github</Text>
             </Row>
             <Row>
               <RowIcon src={photoshopSrc} />
-              <Text>Adobe Photoshop</Text>
+              <Text lineHeight="1.2em">Adobe Photoshop</Text>
             </Row>
             <Row>
               <RowIcon src={aftereffectsSrc} />
-              <Text>Adobe After Effects</Text>
+              <Text lineHeight="1.2em">Adobe After Effects</Text>
             </Row>
             <Row>
               <RowIcon src={xdSrc} />
-              <Text>Adobe Experience Design</Text>
+              <Text lineHeight="1.2em">Adobe Experience Design</Text>
             </Row>
             <Row>
               <RowIcon src={sonyvegasSrc} />
-              <Text>Sony Vegas</Text>
+              <Text lineHeight="1.2em">Sony Vegas</Text>
             </Row>
           </div>
         </div>
@@ -206,15 +206,15 @@ const Grid: FC = () => (
           <div>
             <Row>
               <RowIcon src={cmdSrc} />
-              <Text>Terminal</Text>
+              <Text lineHeight="1.2em">Terminal</Text>
             </Row>
             <Row>
               <RowIcon src={seoSrc} />
-              <Text>Search Engine Opimization</Text>
+              <Text lineHeight="1.2em">Search Engine Opimization</Text>
             </Row>
             <Row>
               <RowIcon src={marketingSrc} />
-              <Text>Marketing</Text>
+              <Text lineHeight="1.2em">Marketing</Text>
             </Row>
           </div>
         </div>
@@ -227,11 +227,11 @@ const Grid: FC = () => (
           <div>
             <Row>
               <RowIcon src={languageSrc} />
-              <Text>Spanish (Native)</Text>
+              <Text lineHeight="1.2em">Spanish (Native)</Text>
             </Row>
             <Row>
               <RowIcon src={languageSrc} />
-              <Text>English</Text>
+              <Text lineHeight="1.2em">English</Text>
             </Row>
           </div>
         </div>

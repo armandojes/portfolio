@@ -9,14 +9,23 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1800px) {
+      font-size: 17px;
+    }
+    @media screen and (max-width:1700px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width:1550px) {
       font-size: 15px;
     }
-    @media screen and (max-width:900px) {
-      font-size: 14px;
+    @media screen and (max-width:1400px) {
+      font-size: 13px;
+    }
+    @media screen and (max-width:1300px) {
+      font-size: 12px;
     }
     @media screen and (max-width:600px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
   img {
