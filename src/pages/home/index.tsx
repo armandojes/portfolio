@@ -5,6 +5,7 @@ import Certificates from 'pages/home/components/certificates';
 import Skills from './components/skills';
 import Contact from './components/contact';
 import Experience from './components/experience';
+import Cover from './components/cover';
 
 const FullWrapper = styled.section`
   background-color: var(--greey);
@@ -14,6 +15,7 @@ const FullWrapper = styled.section`
 const Home: FC = () => (
   <FullWrapper>
     <Header />
+    <Cover />
     <Experience />
     <Skills />
     <Certificates />
