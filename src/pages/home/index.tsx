@@ -16,8 +16,8 @@ const Home: FC = () => (
   <FullWrapper>
     <Header />
     <Cover />
-    <Experience />
     <Skills />
+    <Experience />
     <Certificates />
     <Contact />
   </FullWrapper>
