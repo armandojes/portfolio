@@ -6,6 +6,7 @@ import Skills from './components/skills';
 import Contact from './components/contact';
 import Experience from './components/experience';
 import Cover from './components/cover';
+import About from './components/about';
 
 const FullWrapper = styled.section`
   background-color: var(--greey);
@@ -16,6 +17,7 @@ const Home: FC = () => (
   <FullWrapper>
     <Header />
     <Cover />
+    <About />
     <Skills />
     <Experience />
     <Certificates />
