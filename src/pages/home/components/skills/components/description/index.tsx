@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import nodeSrc from 'assets/nodejs.png';
 import graphql from 'assets/graphql.png';
 import Text from 'layout/text';
 import { Box } from '@mui/material';
@@ -7,6 +6,7 @@ import Lottie from 'react-lottie';
 import { PictureWrapper, Picture, Section, TextContainer } from './styled';
 import backendSrc from './backend.json';
 import frontendSrc from './frontend.json';
+import reactSrc from './react.json';
 
 const Description: FC = () => (
   <div>
@@ -17,7 +17,7 @@ const Description: FC = () => (
       <TextContainer>
         <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">Backend developer</Text>
         <Text>
-          Design and development of any Backend application, API REST services, scalable and custom business logic, server deployments and domain management.
+          I have over 3+ years of experience developing backend applications with NodeJS such as API rest, GraphQL interfaces, database design and security.
         </Text>
       </TextContainer>
     </Section>
@@ -26,12 +26,9 @@ const Description: FC = () => (
       <TextContainer>
         <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">Frontend developer</Text>
         <Text>
-          Design, layout and development of interactive and responsive Frontend applications.
+          I have more than 5 years of experience working directly on the Font-end side with ReactJS and its entire ecosystem like Redux, React-router, webpack, Jest and more...
         </Text>
         <Box paddingTop="1em" />
-        <Text>
-          Agile development based on components, integration of render on the server side and on the client side (isomorphic APPS) with the latest technology such as React, redux and Vue.
-        </Text>
       </TextContainer>
       <PictureWrapper as="div">
         <Lottie options={{ animationData: frontendSrc }} />
@@ -39,13 +36,16 @@ const Description: FC = () => (
     </Section>
 
     <Section reverseWrapMobile>
-      <PictureWrapper>
-        <Picture src={nodeSrc} style={{ mixBlendMode: 'lighten' }} />
+      <PictureWrapper style={{ transform: 'scale(0.6)' }}>
+        <Lottie options={{ animationData: reactSrc }} />
       </PictureWrapper>
       <TextContainer>
-        <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">Node js</Text>
+        <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">React Expert</Text>
+        <Text marginBottom="1em">
+          I am a ReactJS lover, I started experimenting with ReactJS since its release, my last 5 years as a Front-end developer has been with ReactJS.
+        </Text>
         <Text>
-          Development of efficient applications with server-side JavaScript using nodeJS as the execution engine, Rest communication interfaces, GraphQL and real-time applications with socket.
+          I have worked with advanced concepts such as serverSideRender, preRender, I have developed two libraries for reactJs available in NPM.
         </Text>
       </TextContainer>
     </Section>

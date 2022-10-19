@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import ContainerBase from 'layout/container';
 
 export const Background = styled.div<{ backgroundUrl: string }>`
-  height: 36vw;
+  min-height: 36vw;
+  height: 93vh;
+  max-height: 60vw;
   background-image: url(${(props) => props.backgroundUrl});
   background-size: cover;
   background-position: center;
@@ -10,13 +12,11 @@ export const Background = styled.div<{ backgroundUrl: string }>`
   background-blend-mode: overlay;
   display: flex;
   align-items: center;
-  @media screen and (max-width:800px) {
-    height: 40vw;
-  }
   @media screen and (max-width:599px) {
-    height: 60vh;
+    height: 65vh;
     min-height: 80vw;
     align-items: flex-end;
+    max-height: 120vw;
   }
 `;
 
