@@ -1,9 +1,8 @@
 import { FC } from 'react';
-import graphql from 'assets/graphql.png';
 import Text from 'layout/text';
 import { Box } from '@mui/material';
 import Lottie from 'react-lottie';
-import { PictureWrapper, Picture, Section, TextContainer } from './styled';
+import { PictureWrapper, Section, TextContainer } from './styled';
 import backendSrc from './backend.json';
 import frontendSrc from './frontend.json';
 import reactSrc from './react.json';
@@ -48,22 +47,6 @@ const Description: FC = () => (
           I have worked with advanced concepts such as serverSideRender, preRender, I have developed two libraries for reactJs available in NPM.
         </Text>
       </TextContainer>
-    </Section>
-
-    <Section>
-      <TextContainer>
-        <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">GraphQL</Text>
-        <Text>
-          Agile and dynamic application development with GraphQL communication interfaces, API without versions, structured, simple and descriptive query language.
-        </Text>
-        <Box paddingTop="1em" />
-        <Text>
-          Efficient communication between multiple mobile devices, web applications, native desktop applications and more...
-        </Text>
-      </TextContainer>
-      <PictureWrapper>
-        <Picture src={graphql} />
-      </PictureWrapper>
     </Section>
   </div>
 );

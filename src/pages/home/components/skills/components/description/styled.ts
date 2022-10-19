@@ -25,10 +25,6 @@ export const PictureWrapper = styled.div`
   }
 `;
 
-export const Picture = styled.img`
-  width: 100%;
-`;
-
 export const TextContainer = styled.div`
   width: 40%;
   @media screen and (max-width:500px) {
