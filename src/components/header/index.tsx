@@ -1,58 +1,54 @@
-import { ButtonBase } from '@mui/material';
+import { Box, IconButton, SwipeableDrawer } from '@mui/material';
 import Container from 'layout/container';
-import { HashLink } from 'react-router-hash-link';
-import { FC } from 'react';
-import styled from 'styled-components';
+import Responsive from 'layout/responsive';
 import Text from 'layout/text';
-import menuItems from './menuItems';
+import { FC, useState } from 'react';
+import items from './menuItems';
+import { Button, CodeIconLink, HeaderInner, Link, MenuIcon, SwipeableBody, Wrapper } from './styled';
 
-const HeaderInner = styled.div`
- height: 4em;
- display: flex;
- justify-content: left;
- align-items: center;
- color: #fff;
-`;
+const Header: FC = () => {
+  const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
-const Wrapper = styled.header`
-  position: fixed;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: var(--greey);
-  box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 10%);
-  z-index: 2;
-`;
+  const handleOpen = () => setMenuOpen(true);
+  const handleClose = () => setMenuOpen(false);
 
-const Link = styled(HashLink)`
-  color: #fff;
-  text-decoration: none;
-`;
-
-const Button = styled(ButtonBase)`
-  padding: .2em 1em;
-  display: block;
-  border-radius: .5em;
-`;
-
-const Header: FC = () => (
-  <>
+  return (
     <Wrapper>
       <Container>
         <HeaderInner>
-          {menuItems.map((item) => (
-            <Link smooth to={item.path} key={item.label}>
-              <Button>
-                <Text>{item.label}</Text>
-              </Button>
-            </Link>
-          ))}
+          <Responsive rule="min-width:501px">
+            {items.map((item) => (
+              <Link smooth to={item.path} key={item.label}>
+                <Button>
+                  <Text>{item.label}</Text>
+                </Button>
+              </Link>
+            ))}
+          </Responsive>
+          <Responsive rule="max-width:500px">
+            <IconButton onClick={handleOpen}>
+              <MenuIcon />
+              <Text size=".7em">Menu</Text>
+            </IconButton>
+            <SwipeableDrawer open={isMenuOpen} onClose={handleClose} onOpen={handleOpen} style={{ zIndex: 0 }}>
+              <SwipeableBody>
+                {items.map((item) => (
+                  <Link smooth to={item.path} key={item.label}>
+                    <Box padding=".5em 0em">
+                      <Button>
+                        <CodeIconLink />
+                        <Text size="1.1em">{item.label}</Text>
+                      </Button>
+                    </Box>
+                  </Link>
+                ))}
+              </SwipeableBody>
+            </SwipeableDrawer>
+          </Responsive>
         </HeaderInner>
       </Container>
     </Wrapper>
-
-    { /**  Only for shadow  */ }
-    <HeaderInner />
-  </>
-);
+  );
+};
 
 export default Header;

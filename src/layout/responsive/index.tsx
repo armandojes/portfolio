@@ -1,17 +1,17 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactNode } from 'react';
 import { useMediaQuery } from '@mui/material';
 
 export interface ResponsiveProps {
   rule: string,
-  children: ReactElement
+  children: ReactNode
 }
 
-const Responsive: FC<ResponsiveProps> = ({ rule, children }) => {
+const Responsive: FC<ResponsiveProps> = ({ rule, children }): any => {
   const match = useMediaQuery(`(${rule})`);
 
   if (!match) return null;
 
-  return children;
+  return children || null;
 };
 
 export default Responsive;
