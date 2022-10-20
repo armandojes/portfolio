@@ -14,7 +14,7 @@ import { DataWrapper, FlexWrapper, ImageWrapper, Row, RowPicture } from './style
 import animationSrc from './animation.json';
 
 const Contact: FC = () => (
-  <Container>
+  <Container id="contact">
     <SectionTitle title="Contact" />
     <Box>
       <FlexWrapper>

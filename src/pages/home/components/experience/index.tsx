@@ -5,7 +5,7 @@ import SectionTitle from '../sectionTitle';
 import ExperienceCard from './components/experienceCard';
 
 const Projects: FC = () => (
-  <Container>
+  <Container id="experience">
     <SectionTitle title="Experience" />
     <Box>
       <ExperienceCard />

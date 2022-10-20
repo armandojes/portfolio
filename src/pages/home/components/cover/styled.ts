@@ -13,10 +13,10 @@ export const Background = styled.div<{ backgroundUrl: string }>`
   display: flex;
   align-items: center;
   @media screen and (max-width:599px) {
-    height: 65vh;
+    height: 70vh;
     min-height: 80vw;
     align-items: flex-end;
-    max-height: 120vw;
+    max-height: 130vw;
   }
 `;
 

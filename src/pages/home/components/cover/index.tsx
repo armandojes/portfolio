@@ -28,7 +28,7 @@ const Cover: FC = () => {
   }, []);
 
   return (
-    <Background backgroundUrl={currentBackground}>
+    <Background backgroundUrl={currentBackground} id="home">
       <Container>
         <TypedWrapper>
           <span id="typed-wrapper" />

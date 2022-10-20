@@ -5,7 +5,7 @@ import Description from './components/description';
 import Grid from './components/grid';
 
 const Skills: FC = () => (
-  <Container>
+  <Container id="skills">
     <SectionTitle title="Skills" />
     <Description />
     <Grid />

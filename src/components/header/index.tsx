@@ -1,3 +1,4 @@
+import { Close } from '@mui/icons-material';
 import { Box, IconButton, SwipeableDrawer } from '@mui/material';
 import Container from 'layout/container';
 import Responsive from 'layout/responsive';
@@ -26,15 +27,23 @@ const Header: FC = () => {
             ))}
           </Responsive>
           <Responsive rule="max-width:500px">
-            <IconButton onClick={handleOpen}>
-              <MenuIcon />
-              <Text size=".7em">Menu</Text>
-            </IconButton>
+            {!isMenuOpen && (
+              <IconButton onClick={handleOpen}>
+                <MenuIcon />
+                <Text size=".7em">Menu</Text>
+              </IconButton>
+            )}
+            {isMenuOpen && (
+              <IconButton onClick={handleClose}>
+                <MenuIcon as={Close} />
+                <Text size=".7em">Close</Text>
+              </IconButton>
+            )}
             <SwipeableDrawer open={isMenuOpen} onClose={handleClose} onOpen={handleOpen} style={{ zIndex: 0 }}>
               <SwipeableBody>
                 {items.map((item) => (
-                  <Link smooth to={item.path} key={item.label}>
-                    <Box padding=".5em 0em">
+                  <Link to={item.path} key={item.label}>
+                    <Box padding=".5em 0em" onClick={handleClose}>
                       <Button>
                         <CodeIconLink />
                         <Text size="1.1em">{item.label}</Text>

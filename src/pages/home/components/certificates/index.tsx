@@ -15,7 +15,7 @@ const Certificates: FC = () => {
   return (
     <>
       <ModalCertificate picture={certificate} onClose={handleCloseCertificate} />
-      <Container>
+      <Container id="certificates">
         <Box padding="1em 0em">
           <SectionTitle title="Certificates" />
           <FlexContainer>
