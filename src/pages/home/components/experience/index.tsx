@@ -3,18 +3,15 @@ import Container from 'layout/container';
 import { FC } from 'react';
 import SectionTitle from '../sectionTitle';
 import ExperienceCard from './components/experienceCard';
+import projects from './projects';
 
 const Projects: FC = () => (
   <Container id="experience">
     <SectionTitle title="Experience" />
     <Box>
-      <ExperienceCard />
-      <ExperienceCard />
-      <ExperienceCard />
-      <ExperienceCard />
-      <ExperienceCard />
-      <ExperienceCard />
-      <ExperienceCard />
+      {projects.map((project) => (
+        <ExperienceCard description={project.description} title={project.title} mainPicture={project.mainPicture} key={project.title} />
+      ))}
     </Box>
   </Container>
 );

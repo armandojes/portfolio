@@ -1,20 +1,28 @@
 import { FC } from 'react';
-import smenSrc from 'assets/projects/smne_home.png';
 import Text from 'layout/text';
 import { Link } from 'react-router-dom';
 import { Wrapper, Picture, TextWrapper, BlackBox, Button } from './styled';
 
-const ExperienceCard: FC = () => (
+export interface ExperienceCardProps {
+  title: string,
+  description: Array<string>,
+  mainPicture: string,
+}
+
+const ExperienceCard: FC<ExperienceCardProps> = ({ description, mainPicture, title }) => (
   <Wrapper>
-    <Picture src={smenSrc} />
+    <Picture src={mainPicture} />
     <TextWrapper>
-      <Text size="1em" bold lineHeight="1.3em">
-        Algoritmos para el tratamiento farmacológico de la hiperglucemia en diabetes tipo 2
-      </Text>
+      <Text size="1em" bold lineHeight="1.3em">{title}</Text>
       <BlackBox>
-        <Text lineHeight="1.3em">
-          La herramienta digital para consultar los algoritmos para el tratamiento farmacológico de la hiperglucemia en diabetes tipo 2. El objetivo de esta herramienta de trabajo es poder ofrecerle a los pacientes un diagnóstico eficiente y oportuno.
-        </Text>
+        {description.map((paragraph, index) => (
+          <Text
+            lineHeight="1.3em"
+            marginBottom={description.length > (index + 1) ? '1em' : '0em'}
+          >
+            {paragraph}
+          </Text>
+        ))}
       </BlackBox>
       <Link to="/">
         <Button>
