@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import coverSrc from 'assets/projects/witideal_cover.png';
 import Text from 'layout/text';
 import { Box, ButtonBase } from '@mui/material';
+import isTheLastElement from 'helpers/isTheLastElement';
 
 const FlexContainer = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const FlexContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 60%;
+  width: 55%;
   @media screen and (max-width:900px) {
     width: 47%;
   }
@@ -24,7 +24,7 @@ const ImageContainer = styled.div`
 `;
 
 const DataContainer = styled.div`
-  width: 35%;
+  width: 40%;
   @media screen and (max-width:900px) {
     width: 47%;
   }
@@ -63,27 +63,38 @@ const Button = styled(ButtonBase)`
   }
 `;
 
-const Cover: FC = () => (
+export interface CoverProps {
+  picture: string;
+  title: string,
+  url: string
+  github?: string | null,
+  description: Array<string>
+}
+
+const Cover: FC<CoverProps> = ({ description, picture, title, url, github }) => (
   <FlexContainer>
     <ImageContainer>
-      <Picture src={coverSrc} alt="witideal" />
+      <Picture src={picture} alt="witideal" />
     </ImageContainer>
     <DataContainer>
-      <Text size="1.2em" bold marginBottom="1em">Witideal - Real estate portal</Text>
-      <Text marginBottom="1em">
-        Digital real estate platform that connects people who want to buy or rent a house with people who want to rent or sell a house
-      </Text>
-      <Text>
-        Anyone can post property for selling or renting and anyone can search properties for renting or buying
-      </Text>
+      <Text size="1.2em" bold marginBottom="1em">{title}</Text>
+      {description.map((paragraph) => (
+        <Text marginBottom={isTheLastElement(description, paragraph) ? '0em' : '1em'}>
+          {paragraph}
+        </Text>
+      ))}
       <ButtonsContainer>
-        <a href="/">
+        <a href={url}>
           <Button>Sitio web</Button>
         </a>
-        <Box paddingRight="1em" />
-        <a href="/">
-          <Button>Github</Button>
-        </a>
+        {!!github && (
+          <>
+            <Box paddingRight="1em" />
+            <a href={github}>
+              <Button>Github</Button>
+            </a>
+          </>
+        )}
       </ButtonsContainer>
     </DataContainer>
   </FlexContainer>

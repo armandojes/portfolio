@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Text from 'layout/text';
 import { Link } from 'react-router-dom';
+import isTheLastElement from 'helpers/isTheLastElement';
 import { Wrapper, Picture, TextWrapper, BlackBox, Button } from './styled';
 
 export interface ExperienceCardProps {
@@ -16,10 +17,10 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ description, mainPicture, tit
     <TextWrapper>
       <Text size="1em" bold lineHeight="1.3em">{title}</Text>
       <BlackBox>
-        {description.map((paragraph, paragraphIndex) => (
+        {description.map((paragraph) => (
           <Text
             lineHeight="1.3em"
-            marginBottom={description.length > (paragraphIndex + 1) ? '1em' : '0em'}
+            marginBottom={isTheLastElement(description, paragraph) ? '0em' : '1em'}
           >
             {paragraph}
           </Text>
