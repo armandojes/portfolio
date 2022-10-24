@@ -23,6 +23,8 @@ interface ProjectsType {
   url: string,
   github: string | null,
   cover?: string | null,
+  type: 'package' | 'project',
+  technicalDetails?: Array<string> | null,
 }
 
 const projects: Array<ProjectsType> = [
@@ -36,6 +38,16 @@ const projects: Array<ProjectsType> = [
     url: 'https://smne-beta.web.app/',
     github: null,
     cover: smneCover,
+    type: 'project',
+    technicalDetails: [
+      'Interfaces built with React and Material-UI',
+      'Logic and states developed with redux',
+      'Support for multiple devices (Responsive)',
+      'Develpment based on component',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+      'Google cloud functons for backend (nodeJs)',
+    ],
   },
   {
     title: 'Witideal - Real estate portal',
@@ -47,6 +59,17 @@ const projects: Array<ProjectsType> = [
     url: 'https://witideal.com',
     github: null,
     cover: witidealCover,
+    type: 'project',
+    technicalDetails: [
+      'Interfaces built with React and Material-UI',
+      'Support for multiple devices (Responsive)',
+      'Support for signing in with Google',
+      'Support for online payments via PayPal and Openpay',
+      'Develpment based on component',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+      'Google cloud functons for backend (nodeJs)',
+    ],
   },
   {
     title: 'Witideal for developers - Pubic API',
@@ -54,6 +77,13 @@ const projects: Array<ProjectsType> = [
     mainPicture: witidealApiMain,
     url: 'https://witideal-docs.vercel.app/',
     github: null,
+    type: 'project',
+    technicalDetails: [
+      'Developed upon google cloud functions',
+      'Json web tokens for authentication',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+    ],
   },
   {
     title: 'IML Clinical and diagnostic analysis laboratory',
@@ -65,6 +95,17 @@ const projects: Array<ProjectsType> = [
     url: 'https://iml-empresas.web.app/',
     github: null,
     cover: imlCover,
+    type: 'project',
+    technicalDetails: [
+      'Interfaces built with React and Material-UI',
+      'Logic and states developed with redux',
+      'Support for online payments via PayPal and Openpay',
+      'Support for multiple devices (Responsive)',
+      'Develpment based on component',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+      'Google cloud functons for backend (nodeJs)',
+    ],
   },
   {
     title: 'Feminelife - Ecommerce and digital gym',
@@ -76,6 +117,18 @@ const projects: Array<ProjectsType> = [
     url: 'https://feminnelife.com/',
     github: null,
     cover: feminnelifeCover,
+    type: 'project',
+    technicalDetails: [
+      'Interfaces built with React and Material-UI',
+      'Logic and states developed with redux',
+      'Support for multiple devices (Responsive)',
+      'Support for online payments via PayPal and Openpay',
+      'Develpment based on component',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+      'Real-time chat via firestore',
+      'Google cloud functons for backend (nodeJs)',
+    ],
   },
   {
     title: 'Northern steakhouses - Ecommerce and steakhouses builder',
@@ -84,6 +137,17 @@ const projects: Array<ProjectsType> = [
     url: 'https://asadoresdelnorte.com/',
     github: null,
     cover: adnCover,
+    type: 'project',
+    technicalDetails: [
+      'Interfaces built with React and Material-UI',
+      'Logic and states developed with redux',
+      'Support for online payments via PayPal and Openpay',
+      'Support for multiple devices (Responsive)',
+      'Develpment based on component',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+      'Google cloud functons for backend (nodeJs)',
+    ],
   },
   {
     title: 'Santa cruz - Ecormmerce and recipe portal',
@@ -92,6 +156,17 @@ const projects: Array<ProjectsType> = [
     url: 'https://mitiendasantacruz.com/',
     github: null,
     cover: scCover,
+    type: 'project',
+    technicalDetails: [
+      'Interfaces built with React and Material-UI',
+      'Logic and states developed with redux',
+      'Support for online payments via PayPal and Openpay',
+      'Support for multiple devices (Responsive)',
+      'Develpment based on component',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+      'Google cloud functons for backend (nodeJs)',
+    ],
   },
   {
     title: 'Artesanias y bordados - Ecommerce',
@@ -100,6 +175,18 @@ const projects: Array<ProjectsType> = [
     url: 'https://artstest.vercel.app/',
     github: null,
     cover: aybCover,
+    type: 'project',
+    technicalDetails: [
+      'Interfaces built with React and Material-UI',
+      'Logic and states developed with redux',
+      'Support for online payments via PayPal and Openpay',
+      'Support for multiple devices (Responsive)',
+      'Develpment based on component',
+      'Latest version of JavaScript transpile with babel and webpack',
+      'Database in firebase firestore',
+      'Google cloud functons for backend (nodeJs)',
+      'Support for signing in with Google and Facebook',
+    ],
   },
   {
     title: 'simple-hook-form Library for managing forms in ReactJs',
@@ -107,6 +194,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: shfMain,
     url: 'https://simple-hook-form.vercel.app/',
     github: null,
+    type: 'package',
   },
   {
     title: 'react-fetch-ssr A simple library for ReactJs for Server-Side-Render',
@@ -114,6 +202,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: rfsMain,
     url: 'https://www.npmjs.com/package/react-fetch-ssr',
     github: 'https://github.com/armandojes/react-fetch-ssr',
+    type: 'package',
   },
 ];
 

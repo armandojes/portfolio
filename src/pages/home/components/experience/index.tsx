@@ -3,7 +3,7 @@ import Container from 'layout/container';
 import { FC } from 'react';
 import SectionTitle from '../sectionTitle';
 import ExperienceCard from './components/experienceCard';
-import projects from './projects';
+import projects from '../../../../data';
 
 const Projects: FC = () => (
   <Container id="experience">
