@@ -3,7 +3,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 import Certificates from 'pages/home/components/certificates';
 import Skills from './components/skills';
-import Contact from './components/contact';
+// import Contact from './components/contact';
 import Experience from './components/experience';
 import Cover from './components/cover';
 import About from './components/about';
@@ -21,7 +21,7 @@ const Home: FC = () => (
     <Skills />
     <Experience />
     <Certificates />
-    <Contact />
+    {/* <Contact /> */}
   </FullWrapper>
 );
 
