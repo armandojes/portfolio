@@ -78,8 +78,8 @@ const Cover: FC<CoverProps> = ({ description, picture, title, url, github }) => 
     </ImageContainer>
     <DataContainer>
       <Text size="1.2em" bold marginBottom="1em">{title}</Text>
-      {description.map((paragraph) => (
-        <Text marginBottom={isTheLastElement(description, paragraph) ? '0em' : '1em'}>
+      {description.map((paragraph, paragraphIndex) => (
+        <Text marginBottom={isTheLastElement(description, paragraph) ? '0em' : '1em'} key={paragraphIndex}>
           {paragraph}
         </Text>
       ))}

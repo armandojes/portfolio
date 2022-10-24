@@ -17,8 +17,9 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ description, mainPicture, tit
     <TextWrapper>
       <Text size="1em" bold lineHeight="1.3em">{title}</Text>
       <BlackBox>
-        {description.map((paragraph) => (
+        {description.map((paragraph, paragraphIndex) => (
           <Text
+            key={paragraphIndex}
             lineHeight="1.3em"
             marginBottom={isTheLastElement(description, paragraph) ? '0em' : '1em'}
           >

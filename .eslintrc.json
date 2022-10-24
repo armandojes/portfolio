@@ -26,6 +26,7 @@
     "react/function-component-definition": "off",
     "react/require-default-props": "off",
     "max-len": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "react/no-array-index-key": "off"
   }
 }
