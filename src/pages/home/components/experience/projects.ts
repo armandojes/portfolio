@@ -1,11 +1,18 @@
 import smneMain from 'assets/projects/smne_home.png';
+import smneCover from 'assets/projects/smne_cover.png';
 import witidealMain from 'assets/projects/witideal_main.png';
+import witidealCover from 'assets/projects/witideal_cover.png';
 import witidealApiMain from 'assets/projects/witidealapi_main.png';
 import imlMain from 'assets/projects/iml_main.png';
+import imlCover from 'assets/projects/iml_cover.png';
 import feminnelifeMain from 'assets/projects/feminelife_main.png';
+import feminnelifeCover from 'assets/projects/feminnelife_cover.png';
 import adnMain from 'assets/projects/adn_main.png';
+import adnCover from 'assets/projects/adn_cover.png';
 import scMain from 'assets/projects/sc_main.png';
+import scCover from 'assets/projects/st_cover.png';
 import aybMain from 'assets/projects/ayb_main.png';
+import aybCover from 'assets/projects/ayb_cover.png';
 import shfMain from 'assets/projects/shf_main.png';
 import rfsMain from 'assets/projects/rfs_main.png';
 
@@ -15,6 +22,7 @@ interface ProjectsType {
   mainPicture: string,
   url: string,
   github: string | null,
+  cover?: string | null,
 }
 
 const projects: Array<ProjectsType> = [
@@ -27,6 +35,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: smneMain,
     url: 'https://smne-beta.web.app/',
     github: null,
+    cover: smneCover,
   },
   {
     title: 'Witideal - Real estate portal',
@@ -37,6 +46,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: witidealMain,
     url: 'https://witideal.com',
     github: null,
+    cover: witidealCover,
   },
   {
     title: 'Witideal for developers - Pubic API',
@@ -54,6 +64,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: imlMain,
     url: 'https://iml-empresas.web.app/',
     github: null,
+    cover: imlCover,
   },
   {
     title: 'Feminelife - Ecommerce and digital gym',
@@ -64,6 +75,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: feminnelifeMain,
     url: 'https://feminnelife.com/',
     github: null,
+    cover: feminnelifeCover,
   },
   {
     title: 'Northern steakhouses - Ecommerce and steakhouses builder',
@@ -71,6 +83,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: adnMain,
     url: 'https://asadoresdelnorte.com/',
     github: null,
+    cover: adnCover,
   },
   {
     title: 'Santa cruz - Ecormmerce and recipe portal',
@@ -78,6 +91,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: scMain,
     url: 'https://mitiendasantacruz.com/',
     github: null,
+    cover: scCover,
   },
   {
     title: 'Artesanias y bordados - Ecommerce',
@@ -85,6 +99,7 @@ const projects: Array<ProjectsType> = [
     mainPicture: aybMain,
     url: 'https://artstest.vercel.app/',
     github: null,
+    cover: aybCover,
   },
   {
     title: 'simple-hook-form Library for managing forms in ReactJs',

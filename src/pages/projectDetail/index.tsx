@@ -17,7 +17,7 @@ const ProjectDetail: FC = () => {
         <Container verticalPadding="1em">
           <Cover
             description={project.description}
-            picture={project.mainPicture}
+            picture={project.cover || project.mainPicture}
             title={project.title}
             url={project.url}
             github={project.github}
