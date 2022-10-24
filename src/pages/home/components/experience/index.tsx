@@ -9,8 +9,14 @@ const Projects: FC = () => (
   <Container id="experience">
     <SectionTitle title="Experience" />
     <Box>
-      {projects.map((project) => (
-        <ExperienceCard description={project.description} title={project.title} mainPicture={project.mainPicture} key={project.title} />
+      {projects.map((project, projectIndex) => (
+        <ExperienceCard
+          description={project.description}
+          title={project.title}
+          mainPicture={project.mainPicture}
+          key={project.title}
+          index={projectIndex}
+        />
       ))}
     </Box>
   </Container>
