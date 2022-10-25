@@ -8,20 +8,65 @@ import smenCreatePatint from 'assets/projects/smne_create_patient.png';
 import smenTreatment from 'assets/projects/smne_treatment.png';
 import smenAlgoritm from 'assets/projects/smne_algoritm.png';
 import smenTeam from 'assets/projects/smne_team.png';
-
+import witidealSearcher from 'assets/projects/witideal_searcher.png';
+import witidealPopularZones from 'assets/projects/witideal_popular_zones.png';
+import witidealResults from 'assets/projects/witideal_results.png';
+import witidealPropertyDetail from 'assets/projects/witideal_property_detail.png';
+import witidealPublish from 'assets/projects/witideal_publish.png';
+import witidealHowItWorks from 'assets/projects/witideal_how_it_works.png';
+import witidealProfile from 'assets/projects/witideal_profile.png';
+import witidealUpdateProfile from 'assets/projects/witideal_update_profile.png';
 import witidealMain from 'assets/projects/witideal_main.png';
 import witidealCover from 'assets/projects/witideal_cover.png';
 import witidealApiMain from 'assets/projects/witidealapi_main.png';
 import imlMain from 'assets/projects/iml_main.png';
 import imlCover from 'assets/projects/iml_cover.png';
+import imlStore from 'assets/projects/iml_store.png';
+import imlProductDetail from 'assets/projects/iml_product_detail.png';
+import imlNewAppointment from 'assets/projects/iml_register_a_new_appointment.png';
+import imlForCompnies from 'assets/projects/iml_for_companies.png';
+import imlBranches from 'assets/projects/iml_branches_list.png';
+import imlbranchManeger from 'assets/projects/iml_branch_manager.png';
+import imlHoursControl from 'assets/projects/iml_hours.png';
+import imlAppointmentsList from 'assets/projects/iml_appointments_list.png';
+import imlEmployeesList from 'assets/projects/iml_employees_list.png';
 import feminnelifeMain from 'assets/projects/feminelife_main.png';
 import feminnelifeCover from 'assets/projects/feminnelife_cover.png';
+import feminnelife1 from 'assets/projects/feminnelife_1.png';
+import feminnelife2 from 'assets/projects/feminnelife_2.png';
+import feminnelife3 from 'assets/projects/feminnelife_3.png';
+import feminnelife4 from 'assets/projects/feminnelife_4.png';
+import feminnelife5 from 'assets/projects/feminnelife_5.png';
+import feminnelife6 from 'assets/projects/feminnelife_6.png';
+import feminnelife7 from 'assets/projects/feminnelife_7.png';
+import feminnelife8 from 'assets/projects/feminnelife_8.png';
+import feminnelife9 from 'assets/projects/feminnelife_9.png';
 import adnMain from 'assets/projects/adn_main.png';
 import adnCover from 'assets/projects/adn_cover.png';
+import adn1 from 'assets/projects/adn_1.png';
+import adn2 from 'assets/projects/adn_2.png';
+import adn3 from 'assets/projects/adn_3.png';
+import adn4 from 'assets/projects/adn_4.png';
+import adn5 from 'assets/projects/adn_5.png';
+import adn6 from 'assets/projects/adn_6.png';
+import adn7 from 'assets/projects/adn_7.png';
 import scMain from 'assets/projects/sc_main.png';
 import scCover from 'assets/projects/st_cover.png';
+import sc1 from 'assets/projects/sc_1.png';
+import sc2 from 'assets/projects/sc_2.png';
+import sc3 from 'assets/projects/sc_3.png';
+import sc4 from 'assets/projects/sc_4.png';
+import sc5 from 'assets/projects/sc_5.png';
+import sc6 from 'assets/projects/sc_6.png';
+
 import aybMain from 'assets/projects/ayb_main.png';
 import aybCover from 'assets/projects/ayb_cover.png';
+import ayb1 from 'assets/projects/ayb_1.png';
+import ayb2 from 'assets/projects/ayb_2.png';
+import ayb3 from 'assets/projects/ayb_3.png';
+import ayb4 from 'assets/projects/ayb_4.png';
+import ayb5 from 'assets/projects/ayb_5.png';
+import ayb6 from 'assets/projects/ayb_6.png';
 import shfMain from 'assets/projects/shf_main.png';
 import rfsMain from 'assets/projects/rfs_main.png';
 import getIcon from 'helpers/getIcon';
@@ -126,6 +171,16 @@ const projects: Array<ProjectsType> = [
       { icon: getIcon('html'), label: 'Html' },
       { icon: getIcon('css'), label: 'Css' },
     ],
+    screenshots: [
+      { label: 'Properties searcher', picture: witidealSearcher },
+      { label: 'Property list', picture: witidealResults },
+      { label: 'Popular zones', picture: witidealPopularZones },
+      { label: 'Property detail', picture: witidealPropertyDetail },
+      { label: 'Publish new Property', picture: witidealPublish },
+      { label: 'How it works', picture: witidealHowItWorks },
+      { label: 'User profile', picture: witidealProfile },
+      { label: 'Update user profile', picture: witidealUpdateProfile },
+    ],
   },
   {
     title: 'Witideal for developers - Pubic API',
@@ -157,7 +212,7 @@ const projects: Array<ProjectsType> = [
       'This tool allows IML to manage all its operations in one place in a safe and efficient way.',
     ],
     mainPicture: imlMain,
-    url: 'https://iml-empresas.web.app/',
+    url: 'https://iml.vercel.app/landing',
     github: null,
     cover: imlCover,
     type: 'project',
@@ -185,6 +240,17 @@ const projects: Array<ProjectsType> = [
       { icon: getIcon('json'), label: 'Json' },
       { icon: getIcon('html'), label: 'Html' },
       { icon: getIcon('css'), label: 'Css' },
+    ],
+    screenshots: [
+      { label: 'label here', picture: imlStore },
+      { label: 'label here', picture: imlProductDetail },
+      { label: 'label here', picture: imlNewAppointment },
+      { label: 'label here', picture: imlForCompnies },
+      { label: 'label here', picture: imlBranches },
+      { label: 'label here', picture: imlbranchManeger },
+      { label: 'label here', picture: imlHoursControl },
+      { label: 'label here', picture: imlAppointmentsList },
+      { label: 'label here', picture: imlEmployeesList },
     ],
   },
   {
@@ -222,6 +288,17 @@ const projects: Array<ProjectsType> = [
       { icon: getIcon('html'), label: 'Html' },
       { icon: getIcon('css'), label: 'Css' },
     ],
+    screenshots: [
+      { label: 'label here', picture: feminnelife1 },
+      { label: 'label here', picture: feminnelife2 },
+      { label: 'label here', picture: feminnelife3 },
+      { label: 'label here', picture: feminnelife4 },
+      { label: 'label here', picture: feminnelife5 },
+      { label: 'label here', picture: feminnelife6 },
+      { label: 'label here', picture: feminnelife7 },
+      { label: 'label here', picture: feminnelife8 },
+      { label: 'label here', picture: feminnelife9 },
+    ],
   },
   {
     title: 'Northern steakhouses - Ecommerce and steakhouses builder',
@@ -254,6 +331,15 @@ const projects: Array<ProjectsType> = [
       { icon: getIcon('json'), label: 'Json' },
       { icon: getIcon('html'), label: 'Html' },
       { icon: getIcon('css'), label: 'Css' },
+    ],
+    screenshots: [
+      { label: 'label here', picture: adn1 },
+      { label: 'label here', picture: adn2 },
+      { label: 'label here', picture: adn3 },
+      { label: 'label here', picture: adn4 },
+      { label: 'label here', picture: adn5 },
+      { label: 'label here', picture: adn6 },
+      { label: 'label here', picture: adn7 },
     ],
   },
   {
@@ -288,6 +374,14 @@ const projects: Array<ProjectsType> = [
       { icon: getIcon('html'), label: 'Html' },
       { icon: getIcon('css'), label: 'Css' },
     ],
+    screenshots: [
+      { label: 'label', picture: sc1 },
+      { label: 'label', picture: sc2 },
+      { label: 'label', picture: sc3 },
+      { label: 'label', picture: sc4 },
+      { label: 'label', picture: sc5 },
+      { label: 'label', picture: sc6 },
+    ],
   },
   {
     title: 'Artesanias y bordados - Ecommerce',
@@ -321,6 +415,14 @@ const projects: Array<ProjectsType> = [
       { icon: getIcon('json'), label: 'Json' },
       { icon: getIcon('html'), label: 'Html' },
       { icon: getIcon('css'), label: 'Css' },
+    ],
+    screenshots: [
+      { label: 'label here', picture: ayb1 },
+      { label: 'label here', picture: ayb2 },
+      { label: 'label here', picture: ayb3 },
+      { label: 'label here', picture: ayb4 },
+      { label: 'label here', picture: ayb5 },
+      { label: 'label here', picture: ayb6 },
     ],
   },
   {
