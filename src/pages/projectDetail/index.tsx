@@ -8,6 +8,7 @@ import { Box } from '@mui/material';
 import Cover from './components/cover';
 import TechnicalDetails from './components/technicalDetails';
 import LanguajesAndLibraries from './components/languagesAndLibraries';
+import Screenshots from './components/screenshots';
 
 export const Wrapper = styled.div`
   background-color: var(--blackligth);
@@ -35,6 +36,9 @@ const ProjectDetail: FC = () => {
           </Box>
           <Box paddingTop="3em">
             <LanguajesAndLibraries libraries={project.libraries || []} />
+          </Box>
+          <Box paddingTop="3em">
+            <Screenshots screenshots={project.screenshots || []} />
           </Box>
         </Container>
       </Wrapper>

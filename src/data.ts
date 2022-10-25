@@ -1,5 +1,14 @@
 import smneMain from 'assets/projects/smne_home.png';
 import smneCover from 'assets/projects/smne_cover.png';
+import smenLogin from 'assets/projects/smne_login.png';
+import smenRegister from 'assets/projects/smne_register.png';
+import smenPatients from 'assets/projects/smne_patients.png';
+import smenPanel from 'assets/projects/smne_panel.png';
+import smenCreatePatint from 'assets/projects/smne_create_patient.png';
+import smenTreatment from 'assets/projects/smne_treatment.png';
+import smenAlgoritm from 'assets/projects/smne_algoritm.png';
+import smenTeam from 'assets/projects/smne_team.png';
+
 import witidealMain from 'assets/projects/witideal_main.png';
 import witidealCover from 'assets/projects/witideal_cover.png';
 import witidealApiMain from 'assets/projects/witidealapi_main.png';
@@ -29,7 +38,11 @@ interface ProjectsType {
   libraries?: Array<{
     label: string,
     icon: string,
-  }>
+  }> | null,
+  screenshots?: Array<{
+    label: string,
+    picture: string,
+  }> | null,
 }
 
 const projects: Array<ProjectsType> = [
@@ -67,6 +80,16 @@ const projects: Array<ProjectsType> = [
       { icon: getIcon('json'), label: 'Json' },
       { icon: getIcon('html'), label: 'Html' },
       { icon: getIcon('css'), label: 'Css' },
+    ],
+    screenshots: [
+      { label: 'Login', picture: smenLogin },
+      { label: 'Register', picture: smenRegister },
+      { label: 'Panel for doctor', picture: smenPanel },
+      { label: 'Patients Manager', picture: smenPatients },
+      { label: 'Create a new patient', picture: smenCreatePatint },
+      { label: 'Treatment generated', picture: smenTreatment },
+      { label: 'Algorithm for consult', picture: smenAlgoritm },
+      { label: 'Team', picture: smenTeam },
     ],
   },
   {
