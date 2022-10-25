@@ -25,9 +25,9 @@ const TechnicalDetails: FC<TechnicalDetailsProps> = ({ data }) => (
     <DividerWithTitle content="Technical detail" />
     <div>
       {data.map((element, index) => (
-        <Row>
+        <Row key={index}>
           <Icon />
-          <Text key={index}>{element}</Text>
+          <Text>{element}</Text>
         </Row>
       ))}
     </div>

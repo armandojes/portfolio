@@ -84,12 +84,12 @@ const projects: Array<ProjectsType> = [
     screenshots: [
       { label: 'Login', picture: smenLogin },
       { label: 'Register', picture: smenRegister },
-      { label: 'Panel for doctor', picture: smenPanel },
-      { label: 'Patients Manager', picture: smenPatients },
+      { label: 'Panel for doctors', picture: smenPanel },
+      { label: 'Patient manager', picture: smenPatients },
       { label: 'Create a new patient', picture: smenCreatePatint },
       { label: 'Treatment generated', picture: smenTreatment },
-      { label: 'Algorithm for consult', picture: smenAlgoritm },
-      { label: 'Team', picture: smenTeam },
+      { label: 'Algorithm for consult ', picture: smenAlgoritm },
+      { label: 'Collaborators directory', picture: smenTeam },
     ],
   },
   {
