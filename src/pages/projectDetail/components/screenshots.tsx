@@ -1,3 +1,4 @@
+import { useModalPicture } from 'context/modalPicture';
 import Text from 'layout/text';
 import { FC } from 'react';
 import styled from 'styled-components';
@@ -37,18 +38,22 @@ export interface ScreenshotsProps {
   }>
 }
 
-const Screenshots: FC<ScreenshotsProps> = ({ screenshots }) => (
-  <div>
-    <DividerWithTitle content="Screenshots" />
-    <Grid>
-      {screenshots.map((screenshot) => (
-        <Card key={screenshot.picture}>
-          <Text marginBottom=".2em">{screenshot.label}</Text>
-          <CardPicture src={screenshot.picture} alt={screenshot.label} />
-        </Card>
-      ))}
-    </Grid>
-  </div>
-);
+const Screenshots: FC<ScreenshotsProps> = ({ screenshots }) => {
+  const { openModal } = useModalPicture();
+
+  return (
+    <div>
+      <DividerWithTitle content="Screenshots" />
+      <Grid>
+        {screenshots.map((screenshot) => (
+          <Card key={screenshot.picture} onClick={() => openModal(screenshot.picture)}>
+            <Text marginBottom=".2em">{screenshot.label}</Text>
+            <CardPicture src={screenshot.picture} alt={screenshot.label} />
+          </Card>
+        ))}
+      </Grid>
+    </div>
+  );
+};
 
 export default Screenshots;
