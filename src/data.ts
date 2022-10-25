@@ -15,6 +15,7 @@ import aybMain from 'assets/projects/ayb_main.png';
 import aybCover from 'assets/projects/ayb_cover.png';
 import shfMain from 'assets/projects/shf_main.png';
 import rfsMain from 'assets/projects/rfs_main.png';
+import getIcon from 'helpers/getIcon';
 
 interface ProjectsType {
   title: string,
@@ -25,6 +26,10 @@ interface ProjectsType {
   cover?: string | null,
   type: 'package' | 'project',
   technicalDetails?: Array<string> | null,
+  libraries?: Array<{
+    label: string,
+    icon: string,
+  }>
 }
 
 const projects: Array<ProjectsType> = [
@@ -48,6 +53,21 @@ const projects: Array<ProjectsType> = [
       'Database in firebase firestore',
       'Google cloud functons for backend (nodeJs)',
     ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('react'), label: 'ReactJs' },
+      { icon: getIcon('reactRouter'), label: 'React Router' },
+      { icon: getIcon('redux'), label: 'Redux' },
+      { icon: getIcon('materialUi'), label: 'Material UI' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('typescript'), label: 'Typescript' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
+      { icon: getIcon('html'), label: 'Html' },
+      { icon: getIcon('css'), label: 'Css' },
+    ],
   },
   {
     title: 'Witideal - Real estate portal',
@@ -70,6 +90,19 @@ const projects: Array<ProjectsType> = [
       'Database in firebase firestore',
       'Google cloud functons for backend (nodeJs)',
     ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('react'), label: 'ReactJs' },
+      { icon: getIcon('reactRouter'), label: 'React Router' },
+      { icon: getIcon('materialUi'), label: 'Material UI' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
+      { icon: getIcon('html'), label: 'Html' },
+      { icon: getIcon('css'), label: 'Css' },
+    ],
   },
   {
     title: 'Witideal for developers - Pubic API',
@@ -83,6 +116,15 @@ const projects: Array<ProjectsType> = [
       'Json web tokens for authentication',
       'Latest version of JavaScript transpile with babel and webpack',
       'Database in firebase firestore',
+    ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('express'), label: 'express' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('typescript'), label: 'Typescript' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
     ],
   },
   {
@@ -105,6 +147,21 @@ const projects: Array<ProjectsType> = [
       'Latest version of JavaScript transpile with babel and webpack',
       'Database in firebase firestore',
       'Google cloud functons for backend (nodeJs)',
+    ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('react'), label: 'ReactJs' },
+      { icon: getIcon('reactRouter'), label: 'React Router' },
+      { icon: getIcon('redux'), label: 'Redux' },
+      { icon: getIcon('materialUi'), label: 'Material UI' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('typescript'), label: 'Typescript' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
+      { icon: getIcon('html'), label: 'Html' },
+      { icon: getIcon('css'), label: 'Css' },
     ],
   },
   {
@@ -129,6 +186,19 @@ const projects: Array<ProjectsType> = [
       'Real-time chat via firestore',
       'Google cloud functons for backend (nodeJs)',
     ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('react'), label: 'ReactJs' },
+      { icon: getIcon('reactRouter'), label: 'React Router' },
+      { icon: getIcon('materialUi'), label: 'Material UI' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
+      { icon: getIcon('html'), label: 'Html' },
+      { icon: getIcon('css'), label: 'Css' },
+    ],
   },
   {
     title: 'Northern steakhouses - Ecommerce and steakhouses builder',
@@ -147,6 +217,20 @@ const projects: Array<ProjectsType> = [
       'Latest version of JavaScript transpile with babel and webpack',
       'Database in firebase firestore',
       'Google cloud functons for backend (nodeJs)',
+    ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('react'), label: 'ReactJs' },
+      { icon: getIcon('reactRouter'), label: 'React Router' },
+      { icon: getIcon('redux'), label: 'Redux' },
+      { icon: getIcon('materialUi'), label: 'Material UI' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
+      { icon: getIcon('html'), label: 'Html' },
+      { icon: getIcon('css'), label: 'Css' },
     ],
   },
   {
@@ -167,6 +251,21 @@ const projects: Array<ProjectsType> = [
       'Database in firebase firestore',
       'Google cloud functons for backend (nodeJs)',
     ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('react'), label: 'ReactJs' },
+      { icon: getIcon('reactRouter'), label: 'React Router' },
+      { icon: getIcon('redux'), label: 'Redux' },
+      { icon: getIcon('materialUi'), label: 'Material UI' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
+      { icon: getIcon('html'), label: 'Html' },
+      { icon: getIcon('css'), label: 'Css' },
+    ],
   },
   {
     title: 'Artesanias y bordados - Ecommerce',
@@ -186,6 +285,21 @@ const projects: Array<ProjectsType> = [
       'Database in firebase firestore',
       'Google cloud functons for backend (nodeJs)',
       'Support for signing in with Google and Facebook',
+    ],
+    libraries: [
+      { icon: getIcon('javascript'), label: 'JavaScript' },
+      { icon: getIcon('firebase'), label: 'Firebase' },
+      { icon: getIcon('node'), label: 'NodeJs' },
+      { icon: getIcon('react'), label: 'ReactJs' },
+      { icon: getIcon('reactRouter'), label: 'React Router' },
+      { icon: getIcon('redux'), label: 'Redux' },
+      { icon: getIcon('materialUi'), label: 'Material UI' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('styledComponents'), label: 'Styled Components' },
+      { icon: getIcon('jwt'), label: 'Json web tokens' },
+      { icon: getIcon('json'), label: 'Json' },
+      { icon: getIcon('html'), label: 'Html' },
+      { icon: getIcon('css'), label: 'Css' },
     ],
   },
   {
