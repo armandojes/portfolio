@@ -4,12 +4,7 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**",
-      "src",
-      ".env",
-      ".eslintrc.json",
-      "package.json",
-      "tsconfig.js"
+      "**/node_modules/**"
     ],
     "rewrites": [
       {
