@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "portfolio-622a9"
-  }
+  },
+  "targets": {
+    "portfolio-622a9": {
+      "hosting": {
+        "armandojes": [
+          "armandojes"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

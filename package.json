@@ -35,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && firebase deploy --only hosting"
+    "deploy": "npm run build && firebase deploy --only hosting:armandojes"
   },
   "browserslist": {
     "production": [
@@ -59,7 +59,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "react-snap": "^1.23.0"
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
