@@ -84,13 +84,13 @@ const Cover: FC<CoverProps> = ({ description, picture, title, url, github }) => 
         </Text>
       ))}
       <ButtonsContainer>
-        <a href={url}>
+        <a href={url} target="_blank" rel="noreferrer">
           <Button>Sitio web</Button>
         </a>
         {!!github && (
           <>
             <Box paddingRight="1em" />
-            <a href={github}>
+            <a href={github} target="_blank" rel="noreferrer">
               <Button>Github</Button>
             </a>
           </>

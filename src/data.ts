@@ -388,7 +388,7 @@ const projects: Array<ProjectsType> = [
     description: ['"Handicrafts and embroidery" was born to promote our artisans, promoting genuine Chiapas popular art, with the promotion and dissemination inside and outside their spaces.'],
     mainPicture: aybMain,
     url: 'https://artstest.vercel.app/',
-    github: null,
+    github: 'https://github.com/armandojes/artesaniasybordados',
     cover: aybCover,
     type: 'project',
     technicalDetails: [
@@ -430,7 +430,7 @@ const projects: Array<ProjectsType> = [
     description: ['Simple-hook-form is a small, simple and robust library for handling forms in ReactJs, it abstracts away complexities and reduces boilerplate code.'],
     mainPicture: shfMain,
     url: 'https://simple-hook-form.vercel.app/',
-    github: null,
+    github: 'https://github.com/armandojes/simple-hook-form',
     type: 'package',
   },
   {
