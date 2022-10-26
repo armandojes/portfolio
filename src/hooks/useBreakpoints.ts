@@ -5,7 +5,8 @@ export interface BreakpointsProps {
   lg?: string,
   md?: string,
   sm?: string,
-  xs: string,
+  xs?: string,
+  fallback?: string,
 }
 
 const useBreakpoints = () => {
@@ -21,7 +22,7 @@ const useBreakpoints = () => {
     if (md && values.md) return values.md;
     if (sm && values.sm) return values.sm;
     if (xs && values.xs) return values.xs;
-    return values.xs;
+    return values.fallback;
   };
 };
 
