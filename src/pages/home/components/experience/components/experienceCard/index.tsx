@@ -9,9 +9,11 @@ export interface ExperienceCardProps {
   description: Array<string>,
   mainPicture: string,
   index: number,
+  type: 'project' | 'package',
+  url?: string,
 }
 
-const ExperienceCard: FC<ExperienceCardProps> = ({ description, mainPicture, title, index }) => (
+const ExperienceCard: FC<ExperienceCardProps> = ({ description, mainPicture, title, index, type, url }) => (
   <Wrapper>
     <Picture src={mainPicture} />
     <TextWrapper>
@@ -27,11 +29,20 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ description, mainPicture, tit
           </Text>
         ))}
       </BlackBox>
-      <Link to={`/project-detail/${index}`}>
-        <Button>
-          Ver detalles
-        </Button>
-      </Link>
+      {type === 'project' && (
+        <Link to={`/project-detail/${index}`}>
+          <Button>
+            Ver detalles
+          </Button>
+        </Link>
+      )}
+      {type === 'package' && url && (
+        <a href={url}>
+          <Button>
+            Ver detalles
+          </Button>
+        </a>
+      )}
     </TextWrapper>
   </Wrapper>
 );

@@ -16,6 +16,8 @@ const Projects: FC = () => (
           mainPicture={project.mainPicture}
           key={project.title}
           index={projectIndex}
+          type={project.type}
+          url={project.url}
         />
       ))}
     </Box>
