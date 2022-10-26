@@ -5,14 +5,12 @@ import { StyledEngineProvider } from '@mui/material';
 import MuiThemeProvider from 'context/muiThemeProvider';
 import { Route, Routes } from 'react-router-dom';
 import ProjectDetail from 'pages/projectDetail';
-import ScrollHandler from 'components/scrollHandler';
 import { ModalPictureProvider } from 'context/modalPicture';
 import GlobalStyles from './styledGlobal';
 
 const App: FC = () => (
   <>
     <GlobalStyles />
-    <ScrollHandler />
     <MuiThemeProvider>
       <StyledEngineProvider injectFirst>
         <ModalPictureProvider>

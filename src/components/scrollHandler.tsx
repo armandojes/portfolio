@@ -1,5 +1,4 @@
 import { FC, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import debounce from 'debounce';
 
 export interface Store {
@@ -17,27 +16,25 @@ const createStore = () => {
 const store = createStore();
 
 const ScrollHandler: FC = () => {
-  const { pathname } = useLocation();
+  const { pathname } = window.location;
 
   // scroll handler
   const handleScroll = debounce(() => {
     const scrolled = window.scrollY;
     store.setValue(pathname, scrolled);
-  }, 1000);
+  }, 100);
 
   // take manual control
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-  }, []);
 
-  useEffect(() => {
     window.scrollTo({ top: store.getValue(pathname) || 0 });
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [pathname]);
+  }, []);
+
   return null;
 };
 
