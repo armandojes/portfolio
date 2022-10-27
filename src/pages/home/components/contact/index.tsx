@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import { FC } from 'react';
-import Lottie from 'react-lottie';
+import Lottie from 'react-lottie-player';
 import Text from 'layout/text';
 import githubSrc from 'assets/icons/github.png';
 import facebookSrc from 'assets/icons/facebook.png';
@@ -18,8 +18,8 @@ const Contact: FC = () => (
     <SectionTitle title="Contact" />
     <Box>
       <FlexWrapper>
-        <ImageWrapper>
-          <Lottie options={{ animationData: animationSrc }} />
+        <ImageWrapper id={Date.now().toString()}>
+          <Lottie animationData={animationSrc} play loop />
         </ImageWrapper>
         <DataWrapper>
           <Text color="var(--green)" size="1.2em" bold>

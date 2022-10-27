@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Text from 'layout/text';
 import { Box } from '@mui/material';
-import Lottie from 'react-lottie';
+import Lottie from 'react-lottie-player';
 import { PictureWrapper, Section, TextContainer } from './styled';
 import backendSrc from './backend.json';
 import frontendSrc from './frontend.json';
@@ -11,7 +11,7 @@ const Description: FC = () => (
   <div>
     <Section reverseWrapMobile>
       <PictureWrapper style={{ transform: 'scale(1.3)' }}>
-        <Lottie options={{ animationData: backendSrc }} />
+        <Lottie animationData={backendSrc} play loop />
       </PictureWrapper>
       <TextContainer>
         <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">Backend developer</Text>
@@ -30,13 +30,13 @@ const Description: FC = () => (
         <Box paddingTop="1em" />
       </TextContainer>
       <PictureWrapper as="div">
-        <Lottie options={{ animationData: frontendSrc }} />
+        <Lottie animationData={frontendSrc} play loop />
       </PictureWrapper>
     </Section>
 
     <Section reverseWrapMobile>
       <PictureWrapper style={{ transform: 'scale(0.6)' }}>
-        <Lottie options={{ animationData: reactSrc }} />
+        <Lottie animationData={reactSrc} play loop />
       </PictureWrapper>
       <TextContainer>
         <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">React Expert</Text>
