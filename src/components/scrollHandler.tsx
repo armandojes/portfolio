@@ -1,39 +1,35 @@
-import { FC, useEffect } from 'react';
-import debounce from 'debounce';
+import { debounce } from 'debounce';
+import { FC, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+
+// set scroll restoration manual only once
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
 
 export interface Store {
   [key:string]: number
 }
 
-const createStore = () => {
-  const payload: Store = {};
-  const getValue = (pathname: string) => payload[pathname];
-  const setValue = (pathname: string, value: number) => { payload[pathname] = value; };
-
-  return { payload, getValue, setValue };
-};
-
-const store = createStore();
-
 const ScrollHandler: FC = () => {
-  const { pathname } = window.location;
+  const store = useRef<Store>({});
+  const { pathname } = useLocation();
 
-  // scroll handler
   const handleScroll = debounce(() => {
-    const scrolled = window.scrollY;
-    store.setValue(pathname, scrolled);
+    store.current[pathname] = window.pageYOffset;
   }, 100);
 
-  // take manual control
+  // restore scroll
   useEffect(() => {
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
-    }
+    const prevScrolled = store.current[pathname] || 0;
+    window.scrollTo(0, prevScrolled);
+  }, [pathname]);
 
-    window.scrollTo({ top: store.getValue(pathname) || 0 });
+  // add event listener
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pathname]);
 
   return null;
 };

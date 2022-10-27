@@ -6,6 +6,7 @@ import MuiThemeProvider from 'context/muiThemeProvider';
 import { Route, Routes } from 'react-router-dom';
 import ProjectDetail from 'pages/projectDetail';
 import { ModalPictureProvider } from 'context/modalPicture';
+import ScrollHandler from 'components/scrollHandler';
 import GlobalStyles from './styledGlobal';
 
 const App: FC = () => (
@@ -14,6 +15,7 @@ const App: FC = () => (
     <MuiThemeProvider>
       <StyledEngineProvider injectFirst>
         <ModalPictureProvider>
+          <ScrollHandler />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project-detail/:projectId" element={<ProjectDetail />} />
