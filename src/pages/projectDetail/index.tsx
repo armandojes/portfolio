@@ -1,4 +1,3 @@
-import Header from 'components/header';
 import Container from 'layout/container';
 import projects from 'data';
 import { FC } from 'react';
@@ -20,29 +19,26 @@ const ProjectDetail: FC = () => {
   const project = projects[parseInt(projectId, 10)];
 
   return (
-    <>
-      <Header />
-      <Wrapper>
-        <Container verticalPadding="1em">
-          <Cover
-            description={project.description}
-            picture={project.cover || project.mainPicture}
-            title={project.title}
-            url={project.url}
-            github={project.github}
-          />
-          <Box paddingTop="3em">
-            <TechnicalDetails data={project.technicalDetails || []} />
-          </Box>
-          <Box paddingTop="3em">
-            <LanguajesAndLibraries libraries={project.libraries || []} />
-          </Box>
-          <Box paddingTop="3em">
-            <Screenshots screenshots={project.screenshots || []} />
-          </Box>
-        </Container>
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Container verticalPadding="1em">
+        <Cover
+          description={project.description}
+          picture={project.cover || project.mainPicture}
+          title={project.title}
+          url={project.url}
+          github={project.github}
+        />
+        <Box paddingTop="3em">
+          <TechnicalDetails data={project.technicalDetails || []} />
+        </Box>
+        <Box paddingTop="3em">
+          <LanguajesAndLibraries libraries={project.libraries || []} />
+        </Box>
+        <Box paddingTop="3em">
+          <Screenshots screenshots={project.screenshots || []} />
+        </Box>
+      </Container>
+    </Wrapper>
   );
 };
 

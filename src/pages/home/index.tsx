@@ -1,4 +1,3 @@
-import Header from 'components/header';
 import { FC } from 'react';
 import styled from 'styled-components';
 import Certificates from 'pages/home/components/certificates';
@@ -15,7 +14,6 @@ const FullWrapper = styled.section`
 
 const Home: FC = () => (
   <FullWrapper>
-    <Header />
     <Cover />
     <About />
     <Skills />
