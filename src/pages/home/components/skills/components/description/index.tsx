@@ -25,7 +25,7 @@ const Description: FC = () => (
       <TextContainer>
         <Text color="var(--blue)" size="1.2em" bold marginBottom=".4em">Frontend developer</Text>
         <Text>
-          I have more than 5 years of experience working directly on the Font-end side with ReactJS and its entire ecosystem like Redux, React-router, webpack, Jest and more...
+          I have more than 5 years of experience working directly on the Front-end side with ReactJS and its entire ecosystem like Redux, React-router, webpack, Jest and more...
         </Text>
         <Box paddingTop="1em" />
       </TextContainer>

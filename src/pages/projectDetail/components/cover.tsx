@@ -85,7 +85,7 @@ const Cover: FC<CoverProps> = ({ description, picture, title, url, github }) => 
       ))}
       <ButtonsContainer>
         <a href={url} target="_blank" rel="noreferrer">
-          <Button>Sitio web</Button>
+          <Button>Website</Button>
         </a>
         {!!github && (
           <>

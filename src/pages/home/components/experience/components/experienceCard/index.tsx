@@ -32,14 +32,14 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ description, mainPicture, tit
       {type === 'project' && (
         <Link to={`/project-detail/${index}`}>
           <Button>
-            Ver detalles
+            More details
           </Button>
         </Link>
       )}
       {type === 'package' && url && (
         <a href={url} target="_blank" rel="noreferrer">
           <Button>
-            Ver detalles
+            More details
           </Button>
         </a>
       )}

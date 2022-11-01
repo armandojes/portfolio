@@ -20,7 +20,7 @@ const Footer: FC = () => (
       <Flex>
         <Text>Developed by Armando de jesus</Text>
         <Box padding="0em 1em" color="var(--white)">|</Box>
-        <a href="http://github.com" target="_blank" rel="noreferrer">
+        <a href="https://github.com/armandojes/portfolio" target="_blank" rel="noreferrer">
           <Text>
             Github
           </Text>
